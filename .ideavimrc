@@ -59,6 +59,7 @@ nnoremap <leader>lf :action ReformatCode<CR>
 nnoremap <leader>li :action OptimizeImports<CR>
 nnoremap <leader>le :action ShowErrorDescription<CR>
 nnoremap <leader>la :action ShowIntentionActions<CR>
+vnoremap <leader>la :action ShowIntentionActions<CR>
 map <C-c> <Esc>
 map <leader>lq :action QuickJavaDoc<CR>
 map <leader>lp :action ParameterInfo<CR>
@@ -108,7 +109,9 @@ nnoremap <leader>rf :action ChooseRunConfiguration<CR>
 nnoremap <leader>rt :action ActivateRunToolWindow<CR>
 nnoremap <leader>ru :action Rerun<CR>
 
-
+"========================== EasyMotion
+map <leader>M <Plug>(easymotion-s)
+map <leader>m <Plug>(easymotion-f)
 "" Map <leader>d to start debug
 
 "" Map \b to toggle the breakpoint on the current line
