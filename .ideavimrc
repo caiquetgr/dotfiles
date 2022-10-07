@@ -7,7 +7,7 @@ let mapleader = " "
 
 set clipboard+=unnamed
 set clipboatd+=ideaput
-set scrolloff=5
+set scrolloff=9
 set number relativenumber
 set ideajoin
 set idearefactormode=keep
@@ -94,7 +94,7 @@ nnoremap gE :action GotoPreviousError<CR>
 nnoremap g1 :action SelectIn<CR>
 
 "========================== Terminal
-nnoremap gt :action ActivateTerminalToolWindow<CR>
+nnoremap <leader>gt :action ActivateTerminalToolWindow<CR>
 nnoremap <leader>tn :action Terminal.OpenInTerminal<CR>
 
 "========================== Debug
