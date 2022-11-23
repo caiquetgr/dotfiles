@@ -2,13 +2,16 @@
 source ~/.vimrc
 
 Plug 'easymotion/vim-easymotion'
+Plug 'terryma/vim-multiple-cursors'
 
 let mapleader = " "
 
+set surround
+set multiple-cursors
 set clipboard+=unnamed
 set clipboatd+=ideaput
 set scrolloff=9
-set number relativenumber
+""set number relativenumber
 set ideajoin
 set idearefactormode=keep
 set incsearch
@@ -19,6 +22,16 @@ set NERDTree
 "" -- IdeaVim commands
 nnoremap \e :e ~/.ideavimrc<CR>\
 nnoremap \r :action IdeaVim.ReloadVimRc.reload<CR>
+
+" Remap multiple-cursors shortcuts to match terryma/vim-multiple-cursors
+nmap <C-n> <Plug>NextWholeOccurrence
+xmap <C-n> <Plug>NextWholeOccurrence
+nmap g<C-n> <Plug>NextOccurrence
+xmap g<C-n> <Plug>NextOccurrence
+nmap <C-x> <Plug>SkipOccurrence
+xmap <C-x> <Plug>SkipOccurrence
+nmap <C-p> <Plug>RemoveOccurrence
+xmap <C-p> <Plug>RemoveOccurrence
 
 "" -- Window navigation
 nnoremap <c-\> :action SplitVertically<CR>
@@ -33,8 +46,8 @@ nnoremap <c-l> <c-w>l
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 
-nnoremap <s-TAB> :action PreviousTab<CR>
-nnoremap <TAB> :action NextTab<CR>
+nnoremap <s-h> :action PreviousTab<CR>
+nnoremap <s-l> :action NextTab<CR>
 
 nnoremap <leader>en :action EditSourceInNewWindow<CR>
 nnoremap <leader>e<TAB> :action NextWindow<CR>
