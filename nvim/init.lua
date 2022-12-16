@@ -1,6 +1,7 @@
-require "caique.options"
-require "caique.keymaps"
-require "caique.plugins"
-require "caique.colorscheme"
-require "caique.cmp"
-
+require("user.options")
+require("user.keymaps")
+require("user.plugins")
+require("user.colorscheme")
+require("user.cmp")
+require("user.lsp")
+require("user.treesitter")
