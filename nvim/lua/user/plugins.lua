@@ -45,6 +45,7 @@ return packer.startup(function(use)
 	use("nvim-lua/popup.nvim") -- An implementation of the Popup API from vim in Neovim
 	use("nvim-lua/plenary.nvim") -- Useful lua functions used ny lots of plugins
 	use("lunarvim/darkplus.nvim") -- Colorscheme
+	use("windwp/nvim-autopairs") -- Autopairs, integrates with both cmp and treesitter
 
 	-- cmp plugins
 	use("hrsh7th/nvim-cmp") -- The completion plugin
@@ -76,6 +77,8 @@ return packer.startup(function(use)
 	})
 	use("p00f/nvim-ts-rainbow")
 
+  -- Git
+  use "lewis6991/gitsigns.nvim"
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
