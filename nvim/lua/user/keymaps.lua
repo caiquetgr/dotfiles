@@ -26,6 +26,8 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 keymap("n", "<leader>e", ":Lex 30<cr>", opts)
+keymap("n", "<leader>qt", ":Bdelete<cr>", opts)
+keymap("n", "<leader>qo", ":%bd|e#|bd#<cr>", opts) -- delete other buffers, except the current
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)
@@ -84,3 +86,7 @@ if status_ok then
 else
   print("error loading gitsigns keymaps")
 end
+
+-- Nvim-tree
+keymap("n", "<leader>e", "<cmd>NvimTreeToggle<cr>", opts)
+keymap("n", "<leader>fe", "<cmd>NvimTreeFindFileToggle<cr>", opts)
