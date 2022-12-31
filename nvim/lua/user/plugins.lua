@@ -49,9 +49,16 @@ return packer.startup(function(use)
 	use("numToStr/Comment.nvim") -- Easily comment stuff
 	use("kyazdani42/nvim-web-devicons") -- Icons shown in explorer
 	use("kyazdani42/nvim-tree.lua") -- Folder explorer
-	use("akinsho/bufferline.nvim")
+	use("akinsho/bufferline.nvim") -- Buffers on top like tabs
 	use("moll/vim-bbye")
-	use("akinsho/toggleterm.nvim")
+	use("akinsho/toggleterm.nvim") -- Terminal in nvim
+	use("nvim-lualine/lualine.nvim") -- Bottom line with information
+	use("ahmedkhalf/project.nvim") -- Project jumper
+	use("lewis6991/impatient.nvim") -- Cache
+	use("lukas-reineke/indent-blankline.nvim") -- Line identation guides
+	use("goolord/alpha-nvim") -- Nvim greeter
+	use("antoinemadec/FixCursorHold.nvim") -- This is needed to fix lsp doc highlight
+	use("folke/which-key.nvim")
 
 	-- cmp plugins
 	use("hrsh7th/nvim-cmp") -- The completion plugin

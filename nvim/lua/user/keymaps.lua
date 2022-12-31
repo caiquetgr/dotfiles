@@ -41,7 +41,7 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
 -- Insert --
 -- Press jk fast to enter
--- keymap("i", "jk", "<ESC>", opts)
+ keymap("i", "jk", "<ESC>", opts)
 
 -- Visual --
 -- Stay in indent mode
@@ -76,6 +76,7 @@ keymap(
 )
 keymap("n", "<leader>fb", "<cmd>Telescope buffers<cr>", opts)
 keymap("n", "<leader>f/", "<cmd>Telescope live_grep<cr>", opts)
+keymap("n", "<leader>fp", "<cmd>Telescope projects<cr>", opts)
 
 -- Git
 local status_ok, gs = pcall(require, "gitsigns")
