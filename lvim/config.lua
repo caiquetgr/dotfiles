@@ -184,6 +184,7 @@ lvim.builtin.treesitter.highlight.enable = true
 --   end,
 -- })
 
+reload("user.plugins")
 reload("user.options")
 reload("user.keymaps")
 reload("user.lsp")
