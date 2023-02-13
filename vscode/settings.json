@@ -1,0 +1,253 @@
+{
+    "files.autoSave": "onFocusChange",
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.sneak": true,
+    "vim.easymotionMarkerooundColor": "#020202",
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "<S-l>"
+            ],
+            "commands": [
+                "workbench.action.nextEditor"
+            ]
+        },
+        {
+            "before": [
+                "<S-h>"
+            ],
+            "commands": [
+                "workbench.action.previousEditor"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "g",
+                "t"
+            ],
+            "commands": [
+                "workbench.action.terminal.toggleTerminal"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "l",
+                "f"
+            ],
+            "commands": [
+                "editor.action.formatDocument"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "l",
+                "r"
+            ],
+            "commands": [
+                "editor.action.rename"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "w"
+            ],
+            "commands": [
+                "workbench.action.files.save"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "f",
+                "f"
+            ],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "f",
+                "/"
+            ],
+            "commands": [
+                "workbench.action.findInFiles"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "e"
+            ],
+            "commands": [
+                "editor.action.marker.next"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "E"
+            ],
+            "commands": [
+                "editor.action.marker.prev"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "D"
+            ],
+            "commands": [
+                "editor.action.revealDefinition"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "d"
+            ],
+            "commands": [
+                "editor.action.revealDeclaration"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "i"
+            ],
+            "commands": [
+                "editor.action.goToImplementation"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "b"
+            ],
+            "commands": [
+                "workbench.action.navigateBack"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "f"
+            ],
+            "commands": [
+                "workbench.action.navigateForward"
+            ]
+        }
+        
+    ],
+        "vim.insertModeKeyBindings": [
+            {
+                "before": [
+                    "j",
+                    "k"
+                ],
+                "after": [
+                    "<Esc>"
+                ]
+            },
+        ],
+        "vim.visualModeKeyBindings": [
+            {
+                "before": [
+                    ">"
+                ],
+                "after": [
+                    ">",
+                    "g",
+                    "v"
+                ]
+            },
+            {
+                "before": [
+                    "<"
+                ],
+                "after": [
+                    "<",
+                    "g",
+                    "v"
+                ]
+            },
+            {
+                "before": [
+                    "<leader>",
+                    "l",
+                    "f"
+                ],
+                "commands": [
+                    "editor.action.formatDocument"
+                ],
+                "silent": true
+            },
+            {
+                "before": [
+                    "<leader>",
+                    "l",
+                    "r"
+                ],
+                "commands": [
+                    "editor.action.refactor"
+                ],
+                "silent": true
+            }
+        ],
+        "vim.normalModeKeyBindingsNonRecursive": [
+            {
+                "before": [
+                    "<C-\\>"
+                ],
+                "commands": [
+                    "workbench.action.splitEditor"
+                ]
+            },
+            {
+                "before": [
+                    "<leader>",
+                    "e"
+                ],
+                "commands": [
+                    "workbench.action.toggleSidebarVisibility"
+                ]
+            },
+            {
+                "before": [
+                    "<leader>",
+                    "fe"
+                ],
+                "commands": [
+                    "revealInExplorer"
+                ]
+            },
+            {
+                "before": ["<leader>", "m"],
+                "after": ["leader", "leader", "2", "s"]
+            }
+        ],
+        "vim.leader": "<space>",
+        "vim.handleKeys": {
+            "<C-a>": false,
+            "<C-f>": false,
+            // VS Code new marker @ next occurence
+            "<C-c>": false,
+            // Cut
+            "<C-x>": false,
+            // Paste
+            "<C-v>": false,
+            "<C-z>": false,
+            "<C-y>": false
+        },
+        "workbench.iconTheme": "material-icon-theme",
+        "workbench.colorTheme": "One Monokai",
+    }
