@@ -104,7 +104,7 @@
         {
             "before": [
                 "g",
-                "D"
+                "d"
             ],
             "commands": [
                 "editor.action.revealDefinition"
@@ -113,7 +113,7 @@
         {
             "before": [
                 "g",
-                "d"
+                "D"
             ],
             "commands": [
                 "editor.action.revealDeclaration"
@@ -250,4 +250,8 @@
         },
         "workbench.iconTheme": "material-icon-theme",
         "workbench.colorTheme": "One Monokai",
+        "editor.fontSize": 14,
+        "[python]": {
+            "editor.formatOnType": true
+        },
     }
