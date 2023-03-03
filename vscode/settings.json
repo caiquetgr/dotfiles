@@ -10,18 +10,11 @@
     "vim.normalModeKeyBindings": [
         {
             "before": [
-                "<S-l>"
+                "<leader>",
+                "q"
             ],
             "commands": [
-                "workbench.action.nextEditor"
-            ]
-        },
-        {
-            "before": [
-                "<S-h>"
-            ],
-            "commands": [
-                "workbench.action.previousEditor"
+                "workbench.action.closeActiveEditor"
             ]
         },
         {
@@ -145,8 +138,17 @@
             "commands": [
                 "workbench.action.navigateForward"
             ]
+        },
+        {
+            "before": [
+                "<space>",
+                "l",
+                "a"
+            ],
+            "commands": [
+                "editor.action.quickFix"
+            ]
         }
-        
     ],
         "vim.insertModeKeyBindings": [
             {
@@ -254,4 +256,5 @@
         "[python]": {
             "editor.formatOnType": true
         },
+        "redhat.telemetry.enabled": false,
     }
