@@ -51,7 +51,7 @@
     {
         "key": "shift+k",
         "command": "editor.action.showHover",
-        "when": "editorTextFocus && !textInputFocus"
+        "when": "editorTextFocus && vim.active"
     },
     {
         "key": "ctrl+k",
