@@ -9,4 +9,7 @@ lvim.plugins = {
       vim.api.nvim_set_keymap("n", "<leader>mt", ":HopChar2<cr>", { silent = true })
     end,
   },
+  {
+    "terryma/vim-multiple-cursors"
+  }
 }
