@@ -12,6 +12,8 @@ lvim.keys.normal_mode["<leader>le"] = {
     end
 }
 
+lvim.lsp.buffer_mappings.normal_mode['gr'] = nil
+lvim.keys.normal_mode["gr"] = "<cmd>Telescope lsp_references<cr>"
 -- lvim.builtin.which_key.mappings["f"] = {
 --     ["f"] = {
 --         function()
@@ -21,6 +23,8 @@ lvim.keys.normal_mode["<leader>le"] = {
 --     }
 -- }
 
+
+lvim.builtin.which_key.mappings["gr"] = { "<cmd>Telescope lsp_references<cr>", "Telescope Goto References" }
 lvim.builtin.which_key.mappings["lE"] = { "<cmd>Telescope quickfix<cr>", "Telescope Quickfix" }
 lvim.builtin.which_key.mappings["le"] = {}
 lvim.builtin.which_key.mappings["le"] = {
@@ -36,3 +40,4 @@ lvim.builtin.terminal.open_mapping = "<c-t>"
 
 lvim.keys.normal_mode["<leader>ff"] =
 ":lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>"
+
