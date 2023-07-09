@@ -3,7 +3,6 @@ lvim.leader = "space"
 lvim.keys.normal_mode["L"] = ":BufferLineCycleNext<CR>"
 lvim.keys.normal_mode["H"] = ":BufferLineCyclePrev<CR>"
 lvim.keys.normal_mode["J"] = ":BufferLinePick<CR>"
-lvim.keys.normal_mode["gi"] = "<cmd>lua vim.lsp.buf.implementation()<cr>"
 lvim.keys.normal_mode["<leader>le"] = {
     function()
       local config = lvim.lsp.diagnostics.float
@@ -13,7 +12,9 @@ lvim.keys.normal_mode["<leader>le"] = {
 }
 
 lvim.lsp.buffer_mappings.normal_mode['gr'] = nil
+lvim.lsp.buffer_mappings.normal_mode['gi'] = nil
 lvim.keys.normal_mode["gr"] = "<cmd>Telescope lsp_references<cr>"
+lvim.keys.normal_mode["gi"] = "<cmd>Telescope lsp_implementations<cr>"
 -- lvim.builtin.which_key.mappings["f"] = {
 --     ["f"] = {
 --         function()
@@ -24,7 +25,6 @@ lvim.keys.normal_mode["gr"] = "<cmd>Telescope lsp_references<cr>"
 -- }
 
 
-lvim.builtin.which_key.mappings["gr"] = { "<cmd>Telescope lsp_references<cr>", "Telescope Goto References" }
 lvim.builtin.which_key.mappings["lE"] = { "<cmd>Telescope quickfix<cr>", "Telescope Quickfix" }
 lvim.builtin.which_key.mappings["le"] = {}
 lvim.builtin.which_key.mappings["le"] = {
