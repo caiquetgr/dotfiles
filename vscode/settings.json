@@ -78,8 +78,9 @@
         },
         {
             "before": [
-                "g",
-                "e"
+                "<leader>",
+                "l",
+                "j"
             ],
             "commands": [
                 "editor.action.marker.next"
@@ -87,8 +88,9 @@
         },
         {
             "before": [
-                "g",
-                "E"
+                "<leader>",
+                "l",
+                "k"
             ],
             "commands": [
                 "editor.action.marker.prev"
