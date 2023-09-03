@@ -11,7 +11,8 @@
         {
             "before": [
                 "<leader>",
-                "q"
+                "q",
+                "t"
             ],
             "commands": [
                 "workbench.action.closeActiveEditor"
@@ -259,4 +260,5 @@
             "editor.formatOnType": true
         },
         "redhat.telemetry.enabled": false,
+        "workbench.activityBar.visible": false,
     }

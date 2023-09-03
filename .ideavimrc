@@ -45,12 +45,13 @@ nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
+nnoremap <leader>e :action ActivateProjectToolWindow<CR>
 
 nnoremap <s-h> :action PreviousTab<CR>
 nnoremap <s-l> :action NextTab<CR>
 
-nnoremap <leader>en :action EditSourceInNewWindow<CR>
-nnoremap <leader>e<TAB> :action NextWindow<CR>
+nnoremap <leader>wo :action EditSourceInNewWindow<CR>
+nnoremap <leader>wn<TAB> :action NextWindow<CR>
 nnoremap <leader>qt :action CloseContent<CR>
 nnoremap <leader>qa :action CloseAllEditors<CR>
 nnoremap <leader>qw :action HideActiveWindow<CR>
@@ -60,7 +61,6 @@ nnoremap zc :action CollapseRegion<CR>
 nnoremap zo :action ExpandRegion<CR>
 nnoremap <leader>zc :action CollapseAllRegions<CR>
 nnoremap <leader>zo :action ExpandAllRegions<CR>
-
 
 "========================= Editing code
 nnoremap [[ :action MethodUp<CR>
@@ -107,8 +107,7 @@ nnoremap <leader>lk :action GotoPreviousError<CR>
 nnoremap g1 :action SelectIn<CR>
 
 "========================== Terminal
-nnoremap <leader>gt :action ActivateTerminalToolWindow<CR>
-nnoremap <leader>tn :action Terminal.OpenInTerminal<CR>
+nnoremap <A-2> :action ActivateTerminalToolWindow<CR>
 
 "========================== Debug
 nnoremap <leader>db :action ToggleLineBreakpoint
