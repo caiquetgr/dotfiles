@@ -110,7 +110,7 @@ nnoremap g1 :action SelectIn<CR>
 nnoremap <A-2> :action ActivateTerminalToolWindow<CR>
 
 "========================== Debug
-nnoremap <leader>db :action ToggleLineBreakpoint
+nnoremap <leader>db :action ToggleLineBreakpoint<CR>
 nnoremap <leader>dr :action ContextDebug<CR>
 nnoremap <leader>dt :action ActivateDebugToolWindow<CR>
 
